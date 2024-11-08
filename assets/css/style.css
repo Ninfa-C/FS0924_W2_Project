@@ -1,1 +1,39 @@
-/* Your styles here */
+html,body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#E9EDEE
+}
+
+header {
+    background-color: #222F3F;
+}
+header img {
+    width: 8%;
+    padding: 10px;
+}
+
+.navBar {
+    background-color: #364759 ;
+    padding: 10px;
+}
+.navBar li{
+    display: inline;
+    margin: 10px;
+}
+
+ul li a:link, ul li a:visited, .gift{
+    color: white;
+    text-decoration: none;
+}
+
+ul li a:hover{
+    text-decoration: underline;
+}
+
+
+.gift {
+    text-align: center;
+    margin: 35px;
+    background-color: #F56600;
+    padding: 10px;
+}
