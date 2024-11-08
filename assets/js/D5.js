@@ -168,5 +168,18 @@ for (let i=0; i<charactersArray.length;i++){
 console.log (newArray)
 
 
+console.log ('<----Esercizio 10 con lo switch---->')
 
 
+const position=[]
+
+for (let i = 0; i < charactersArray.length; i++){
+  let index = alphabet.indexOf(charactersArray[i]);
+  switch (index) {
+    case -1: position.push(-1);
+    break;
+  default: position.push(index + 1);
+  }
+}
+
+console.log (position)
