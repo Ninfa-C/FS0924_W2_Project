@@ -15,7 +15,7 @@ header img {
     padding: 10px;
 }
 
-.navBar {
+.navBar, .totop {
     background-color: #364759;
     padding: 10px;
 }
@@ -109,10 +109,25 @@ section,
     box-shadow: 9px 14px 11px 3px rgba(0, 0, 0, 0.1);
 }
 
-.cards p a:link {
+a:link {
     text-decoration: none;
     font-size: 0.8em;
     color: #037286;
     font-weight: bold;
 }
 
+.adv img {
+    width: 100%;
+}
+.adv {
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+
+}
+.totop a:link, .totop a:visited{
+    color: white;
+    text-decoration: underline;
+}
