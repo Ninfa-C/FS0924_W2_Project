@@ -217,3 +217,76 @@ for (let i = 0; i < charactersArray.length; i++) {
   }
 }
 console.log(pos2);
+
+console.log("<----Esercizio 10 con lo switch 3---->");
+
+const positionArray = []
+for (let i = 0; i < charactersArray.length; i++) {
+  switch (charactersArray[i]) {
+    case "a":
+      positionArray.push(1);
+      break;
+    case "b":
+      positionArray.push(2);
+      break;
+    case "c":
+      positionArray.push(3);
+      break;
+    case "d":
+      positionArray.push(4);
+      break;
+    case "e":
+      positionArray.push(5);
+      break;
+    case "f":
+      positionArray.push(6);
+      break;
+    case "g":
+      positionArray.push(7);
+      break;
+    case "h":
+      positionArray.push(8);
+      break;
+    case "i":
+      positionArray.push(9);
+      break;
+    case "l":
+      positionArray.push(10);
+      break;
+    case "m":
+      positionArray.push(11);
+      break;
+    case "n":
+      positionArray.push(12);
+      break;
+    case "o":
+      positionArray.push(13);
+      break;
+    case "p":
+      positionArray.push(14);
+      break;
+    case "q":
+      positionArray.push(15);
+      break;
+    case "r":
+      positionArray.push(16);
+      break;
+    case "s":
+      positionArray.push(17);
+      break;
+    case "t":
+      positionArray.push(18);
+      break;
+    case "u":
+      positionArray.push(19);
+      break;
+    case "v":
+      positionArray.push(20);
+      break;
+    case "z":
+      positionArray.push(21);
+    break
+  }
+}
+
+console.log (positionArray)
