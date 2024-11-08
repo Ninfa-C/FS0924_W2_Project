@@ -138,7 +138,7 @@ const numericArray = [
   6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,
 ]
 
-console.log ('<----Esercizio 8---->')
+console.log ('<----Esercizio 9---->')
 
 let x = 23
 let indexA= numericArray.indexOf(x);
@@ -148,11 +148,25 @@ while(i<=indexA){
 }
 
 
-
-//console.log (index)
 /* ESERCIZIO 10
-    Partendo dall'array fornito e utilizzando un costrutto switch, genera un nuovo array composto dalle posizioni di ogni carattere all'interno
-    dell'alfabeto italiano.
+    Partendo dall'array fornito e utilizzando un costrutto switch, genera un nuovo array 
+    composto dalle posizioni di ogni carattere all'interno dell'alfabeto italiano.
     es. [f, b, e] --> [6, 2, 5]
 */
-const charactersArray = ['g', 'n', 'u', 'z', 'd']
+const charactersArray = ['g', 'n', 'u', 'z', 'd',]
+
+console.log ('<----Esercizio 10---->')
+
+const alphabet = ['a','b','c','d','e','f','g','h','i','l','m','n','o','p','q','r','s','t','u','v','z']
+
+const newArray = [];
+
+for (let i=0; i<charactersArray.length;i++){
+  let index = alphabet.indexOf(charactersArray[i]);
+  newArray.push(index+1)
+}
+console.log (newArray)
+
+
+
+
