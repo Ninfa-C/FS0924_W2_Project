@@ -10,30 +10,26 @@ REGOLE
 /* ESERCIZIO 1
     Dato il seguente array, scrivi del codice per stampare ogni elemento dell'array in console.
 */
-console.log ('<----Esercizio 1---->')
-const pets = ['dog', 'cat', 'hamster', 'redfish']
+console.log("<----Esercizio 1---->");
+const pets = ["dog", "cat", "hamster", "redfish"];
 
-
-
-for (i=0;i<pets.length;i++){
+for (i = 0; i < pets.length; i++) {
   console.log(pets[i]);
 }
-
-
 
 /* ESERCIZIO 2
     Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets".
 */
-console.log ('<----Esercizio 2---->')
+console.log("<----Esercizio 2---->");
 
-const newPets = pets.sort()
+const newPets = pets.sort();
 
 console.log(newPets);
 
 /* ESERCIZIO 3
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
 */
-console.log ('<----Esercizio 3---->')
+console.log("<----Esercizio 3---->");
 
 const reversePets = newPets.reverse();
 
@@ -43,40 +39,40 @@ console.log(newPets);
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
 
 */
-console.log ('<----Esercizio 4---->')
+console.log("<----Esercizio 4---->");
 
-let shiftPets= newPets.shift()
-newPets.push(shiftPets)
-console.log (newPets)
+let shiftPets = newPets.shift();
+newPets.push(shiftPets);
+console.log(newPets);
 
 /* ESERCIZIO 5
     Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una proprietà "licensePlate" con valore a tua scelta.
 */
 const cars = [
   {
-    brand: 'Ford',
-    model: 'Fiesta',
-    color: 'red',
-    trims: ['titanium', 'st', 'active'],
+    brand: "Ford",
+    model: "Fiesta",
+    color: "red",
+    trims: ["titanium", "st", "active"],
   },
   {
-    brand: 'Peugeot',
-    model: '208',
-    color: 'blue',
-    trims: ['allure', 'GT'],
+    brand: "Peugeot",
+    model: "208",
+    color: "blue",
+    trims: ["allure", "GT"],
   },
   {
-    brand: 'Volkswagen',
-    model: 'Polo',
-    color: 'black',
-    trims: ['life', 'style', 'r-line'],
+    brand: "Volkswagen",
+    model: "Polo",
+    color: "black",
+    trims: ["life", "style", "r-line"],
   },
-]
+];
 
-console.log ('<----Esercizio 5---->')
+console.log("<----Esercizio 5---->");
 
-for (i=0;i<cars.length;i++){
-  cars[i].licensePlate = 'XXXXXX'
+for (i = 0; i < cars.length; i++) {
+  cars[i].licensePlate = "XXXXXX";
 }
 console.log(cars);
 
@@ -85,49 +81,50 @@ console.log(cars);
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
 
-console.log ('<----Esercizio 6---->')
+console.log("<----Esercizio 6---->");
 
 //creo un nuovo oggetto
-let newCar ={
-  brand: 'Fiat',
-    model: 'Panda',
-    color: 'yellow',
-    trims: ['life', 'style'],
-    licensePlate: 'XXXXXX'
-}
+let newCar = {
+  brand: "Fiat",
+  model: "Panda",
+  color: "yellow",
+  trims: ["life", "style"],
+  licensePlate: "XXXXXX",
+};
 
-cars.push(newCar)  //lo pusho dentro all'array
+cars.push(newCar); //lo pusho dentro all'array
 
-for (i=0;i<cars.length;i++){  //per ogni elemento all'interno dell'array cars
-  cars[i].trims.pop()         //all'interno di ogni i di cars, guarda i trim e elimina l'ultimo elemento
+for (i = 0; i < cars.length; i++) {
+  //per ogni elemento all'interno dell'array cars
+  cars[i].trims.pop(); //all'interno di ogni i di cars, guarda i trim e elimina l'ultimo elemento
 }
-console.log (cars)
+console.log(cars);
 
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
-const justTrims = []
+const justTrims = [];
 
-console.log ('<----Esercizio 7---->')
+console.log("<----Esercizio 7---->");
 
-for (i=0;i<cars.length;i++){
-  let x = cars[i].trims.shift()
-  justTrims.push(x)
+for (i = 0; i < cars.length; i++) {
+  let x = cars[i].trims.shift();
+  justTrims.push(x);
 }
 
-console.log(justTrims)
+console.log(justTrims);
 
 /* ESERCIZIO 8
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
     "color" ha valore "b", mostra in console "Fizz". Altrimenti, mostra in console "Buzz".
 */
-console.log ('<----Esercizio 8---->')
+console.log("<----Esercizio 8---->");
 
-for (i=0;i<cars.length;i++){
-  if (cars[i].color.startsWith('b')){
-    console.log ('Fizz')
+for (i = 0; i < cars.length; i++) {
+  if (cars[i].color.startsWith("b")) {
+    console.log("Fizz");
   } else {
-    console.log ('Buzz')
+    console.log("Buzz");
   }
 }
 
@@ -136,50 +133,87 @@ for (i=0;i<cars.length;i++){
 */
 const numericArray = [
   6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,
-]
+];
 
-console.log ('<----Esercizio 9---->')
+console.log("<----Esercizio 9---->");
 
-let x = 23
-let indexA= numericArray.indexOf(x);
-while(i<=indexA){
-  console.log (numericArray[i]);
-  i++
+let x = 23;
+let indexA = numericArray.indexOf(x);
+while (i <= indexA) {
+  console.log(numericArray[i]);
+  i++;
 }
-
 
 /* ESERCIZIO 10
     Partendo dall'array fornito e utilizzando un costrutto switch, genera un nuovo array 
     composto dalle posizioni di ogni carattere all'interno dell'alfabeto italiano.
     es. [f, b, e] --> [6, 2, 5]
 */
-const charactersArray = ['g', 'n', 'u', 'z', 'd',]
+const charactersArray = ["g", "n", "u", "z", "d"];
 
-console.log ('<----Esercizio 10---->')
+console.log("<----Esercizio 10---->");
 
-const alphabet = ['a','b','c','d','e','f','g','h','i','l','m','n','o','p','q','r','s','t','u','v','z']
+const alphabet = [
+  "a",
+  "b",
+  "c",
+  "d",
+  "e",
+  "f",
+  "g",
+  "h",
+  "i",
+  "l",
+  "m",
+  "n",
+  "o",
+  "p",
+  "q",
+  "r",
+  "s",
+  "t",
+  "u",
+  "v",
+  "z",
+];
 
 const newArray = [];
 
-for (let i=0; i<charactersArray.length;i++){
+for (let i = 0; i < charactersArray.length; i++) {
   let index = alphabet.indexOf(charactersArray[i]);
-  newArray.push(index+1)
+  newArray.push(index + 1);
 }
-console.log (newArray)
+console.log(newArray);
 
+console.log("<----Esercizio 10 con lo switch 1---->");
 
-console.log ('<----Esercizio 10 con lo switch---->')
+const position = [];
 
-
-const position=[]
-
-for (let i = 0; i < charactersArray.length; i++){
+for (let i = 0; i < charactersArray.length; i++) {
   let index = alphabet.indexOf(charactersArray[i]);
   switch (index) {
-    case -1: position.push(-1);
-    break;
-  default: position.push(index + 1);
+    case -1:
+      position.push(-1);
+      break;
+    default:
+      position.push(index + 1);
   }
 }
+console.log(position);
 
-console.log (position)
+console.log("<----Esercizio 10 con lo switch 2---->");
+
+const pos2 = [];
+
+for (let i = 0; i < charactersArray.length; i++) {
+  let index = alphabet.indexOf(charactersArray[i]);
+  switch (true) {
+    case index !== -1:
+      pos2.push(index + 1);
+      break;
+    default:
+      console.log("caratteri non validi");
+      break;
+  }
+}
+console.log(pos2);
